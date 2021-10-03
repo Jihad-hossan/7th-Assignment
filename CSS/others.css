@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a, a:hover {
+    text-decoration: none;
+}
+:root {
+    --bg-color: #86ceeb;
+    --btn-color: #024f75;
+    --text-color: #312c42;
+    --font-family: 'Poppins', sans-serif;
+    --lorem-color: #4b3434;
+    --box-color:#b4bcc0;
+    --footer-color: #034b55;
+}
+body{
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+/* styling header section start */
+header {
+    background-color: var(--bg-color);
+}
+.main-menu .navbar-light .navbar-brand img {
+    width: 198px;
+}
+.main-menu .navbar-light .nav-link{
+    margin-right: 1.5rem;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0,0,0,.9);
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link.active:hover,           .main-menu .navbar-light .nav-link:hover{
+    color: var(--btn-color);
+}
+.main-menu .navbar-light .navbar-nav .btn-success{
+    margin-right: 0;
+}
+.main-menu .navbar-light .navbar-nav .btn-success{
+    padding: .5rem 1.4rem;
+    border-radius: 2rem;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    margin-left: .5rem;
+    transition: 1s;
+}
+.main-menu .navbar-light .navbar-nav .btn-success:hover, .main-menu .navbar-light .navbar-nav .btn-success:focus {
+    border: 1px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+    border-radius: 2rem;
+}
+
+/* styling header section end */
+
+/* banner section start */
+.banner {
+    display: flex;
+}
+.banner h4{
+    color: #FD511A;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+.banner h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--text-color);
+}
+.banner h1 span {
+    color: var(--btn-color);
+}
+.banner p {
+font-size: 1rem;
+font-weight: 400;
+line-height: 2rem;
+letter-spacing: 0em;
+text-align: left;
+color: var(--lorem-color);
+}
+.banner .btn-success{
+    padding: .5rem 1.4rem;
+    border-radius: 2rem;
+    border: 1px solid var(--text-color);
+    background-color: var(--btn-color);
+    transition: 1s;
+}
+.banner .btn-success:hover, .btn-success:focus {
+    border: 1px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+    border-radius: 2rem;
+}
+/* banner section end */
+/* ****************************** /* ****************************** */
+/* media query for small device */
+@media (max-width: 600px){
+.main-menu .navbar-light .navbar-brand img {
+            width: 100px;
+}
+.main-menu .navbar-light .navbar-toggler{
+        width: 30px;
+        height: 30px;
+        border: none;
+}
+.main-menu .navbar-light .navbar-toggler:focus, .main-menu .navbar-light .navbar-toggle:hover {
+        border: none;
+}
+.banner {
+        display: flex;
+        flex-direction: column;
+}
+.banner h4{
+        color: #FD511A;
+        line-height: 1rem;
+        font-size: .7rem;
+}
+.banner h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+.banner p {
+    font-size: .5rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: .0823rem;
+    text-align: left;
+    color: var(--lorem-color);
+}
+.banner .btn-success{
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    font-size: .7rem;
+    border: 1px solid var(--text-color);
+    background-color: var(--btn-color);
+    transition: 1s;
+}
+.main-menu .navbar-light .navbar-nav .btn-success{
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    font-size: .7rem;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    transition: 1s;
+}
+}
+    /* media query for small devie end */
+/* ****************************** */
+/* feature section start */
+
+.feature-section {
+    margin: 5rem 0 3rem;
+    width: 100%;
+}
+.feature-section .inner-feature{
+    background-color: var(--box-color);
+    padding: 3rem 2rem;
+    border-radius: .6rem;
+}
+.feature-section .inner-feature:hover{
+    background: #FFFFFF;
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+    border-radius: .6rem;
+}
+.feature-section .inner-feature img{
+    width: 70px;
+    height: 6rem;
+}
+.feature-section .inner-feature h4{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+.feature-section .inner-feature p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--lorem-color);
+    margin: 0;
+}
+/* feature section end */
+/* **********************media start for feature */
+@media (max-width: 600px){
+    .feature-section .inner-feature{
+        background-color: var(--box-color);
+        padding: 2rem .5rem;
+        border-radius: .6rem;
+        margin: .5rem 1rem;
+    }
+    .feature-section .inner-feature h4{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        color: var(--text-color);
+        margin: 0;
+    }
+    .feature-section .inner-feature p{
+        font-size: .6rem;
+        line-height: 1rem;
+        color: var(--lorem-color);
+        margin: 0;
+    }
+}
+/* **********************media for feature */
+/* online section start */
+.online-courses {
+    margin-bottom: 5rem;
+}
+.online-courses .card-group .card{
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 .6rem 2.5rem rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+.online-courses .card-group .card:hover {
+    border: 1px solid var(--btn-color);
+}
+.online-courses .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0;
+}
+.online-courses .card h5{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+.online-courses .card .btn-success{
+    padding: .5rem 1.4rem;
+    border-radius: 2rem;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    transition: 1s;
+}
+.online-courses .card .btn-success:hover, .btn-success:focus {
+    border: 1px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+    border-radius: 2rem;
+}
+.online-courses .card .card-footer{
+    border: none;
+    background: none;
+    padding: 1rem 0;
+}
+.online-courses .card .card-footer span {
+    float: right;
+}
+/* online course section end */
+/* **********************media for online */
+@media (max-width: 600px){
+    .online-courses {
+        margin-bottom: 2rem;
+    }
+    .online-courses .card h5{
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .online-courses .card-group .card{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .online-courses .card .btn-success{
+        padding: .2rem .5rem;
+        border-radius: 1rem;
+        font-size: .7rem;
+        border: 1px solid var(--btn-color);
+        background-color: var(--btn-color);
+        transition: 1s;
+    }
+    .online-courses .card .card-footer{
+        font-size: .7rem;
+    }
+}
+/* **********************end media for online*/
+/* testimonial seciton start */
+.testimonial{
+    margin-bottom: 4rem;
+}
+.testimonial .client-img img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: right;
+}
+/* testimonial seciton end */
+/* **********************start media for testimonial*/
+@media (max-width: 600px){
+    .testimonial{
+        margin-bottom: 2rem;
+    }
+    .testimonial .client-img img{
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    .testimonial p {
+        font-size: .7rem;
+    }
+}
+
+/* **********************start media for testimonial*/
+/* footer start */
+footer {
+    width: 100%;
+    background: var(--footer-color);
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    padding: 3.5rem 0 .1rem;
+
+}
+footer .col-lg-7 {
+    display: flex;
+    flex-direction: row;
+}
+footer .col-lg-7 .col-4 ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+footer .col-lg-7 .col-4 .text-bold {
+    font-weight: 700;
+}
+/* footer end */
+/* media start for footer *** */
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: .7rem
+    }
+    footer .col-lg-7 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    footer .col-lg-7 .col-4 ul {
+        list-style: none;
+        margin: 1rem 0;
+        padding-left: 0;
+    }
+}
